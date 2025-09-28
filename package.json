@@ -6,18 +6,24 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build:vite": "vite build",
     "dev:shopify": "shopify theme dev --store 1s00vn-py.myshopify.com",
     "dev:all": "concurrently -r -k -P 'shopify theme dev {@}' 'vite'",
+    "merge": "node scripts/merge-dist-to-assets.js",
+    "build": "pnpm run build:vite && pnpm merge",
     "deploy": "pnpm run build && shopify theme push"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.21",
-    "concurrently": "^9.2.1",
-    "vite": "^7.1.6",
-    "vite-plugin-shopify": "^4.0.2",
     "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.1.13",
-    "tailwindcss": "^4.1.13"
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^9.2.1",
+    "tailwindcss": "^4.1.13",
+    "vite": "^7.1.6",
+    "vite-plugin-shopify": "^4.0.2"
+  },
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "path": "^0.12.7"
   }
 }

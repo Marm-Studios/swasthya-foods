@@ -10,6 +10,9 @@ export default defineConfig({
     // emptyOutDir: false, // don't delete other manually-added assets
     // assetsDir: '', // put assets at the root of outDir (no subfolders)
     // manifest: 'manifest.json', // write manifest as assets/manifest.json (not .vite/manifest.json)
+    outDir: 'dist', // write build files into theme assets/
+    manifest: true,
+    emptyOutDir: true,
     rollupOptions: {
       output: {
         entryFileNames: '[name].[hash].min.js',
