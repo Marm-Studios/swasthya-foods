@@ -1,6 +1,6 @@
 {
   "frontend/entrypoints/main.css": {
-    "file": "main.ZImpBte8.min.css",
+    "file": "v-main.BEf6szS1.min.css",
     "src": "frontend/entrypoints/main.css",
     "isEntry": true,
     "names": [
@@ -8,7 +8,7 @@
     ]
   },
   "frontend/entrypoints/main.js": {
-    "file": "main.B5Qt9EMX.min.js",
+    "file": "v-main.B5Qt9EMX.min.js",
     "name": "main",
     "src": "frontend/entrypoints/main.js",
     "isEntry": true
