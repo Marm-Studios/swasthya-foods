@@ -1,0 +1,33 @@
+:root {
+  --background-color: #edeced;
+  --navbar-color: #dbd2c9;
+  --header-color: #dbd2c9;
+  --footer-color: #a97647;
+
+  --body-text-color: #383736;
+  --heading-text-color: #599552;
+}
+
+@theme inline {
+  --color-background: var(--background-color);
+  --color-navbar: var(--navbar-color);
+  --color-header: var(--header-color);
+  --color-footer: var(--footer-color);
+
+  --color-body-text: var(--body-text-color);
+  --color-heading-text: var(--heading-text-color);
+}
+
+@layer base {
+  html {
+    @apply !text-xs;
+  }
+
+  body {
+    @apply !bg-background;
+  }
+
+  /* .page-width {
+    @apply 
+  } */
+}
