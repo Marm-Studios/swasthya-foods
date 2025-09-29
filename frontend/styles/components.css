@@ -50,11 +50,18 @@
   }
 
   .footer-custom-bottom {
-    @apply !bg-footer !pb-20;
+    @apply !bg-footer !py-16;
   }
 
+  /* #region OVERWRITTEN */
   .copyright__content {
     @apply !text-lg;
   }
+
+  .footer__copyright {
+    @apply !mt-0;
+  }
+  /* #endregion */
+
   /* #endregion */
 }

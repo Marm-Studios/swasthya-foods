@@ -5,10 +5,10 @@
   "packageManager": "pnpm@10.17.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev:vite": "vite",
     "build:vite": "vite build",
     "dev:shopify": "shopify theme dev --store 1s00vn-py.myshopify.com",
-    "dev:all": "concurrently -r -k -P 'shopify theme dev {@}' 'vite'",
+    "dev": "concurrently -r -k -P 'shopify theme dev {@}' 'vite'",
     "merge": "node scripts/merge-dist-to-assets.js",
     "cleanup": "node scripts/cleanup-assets.cjs",
     "build": "pnpm run build:vite && pnpm cleanup && pnpm merge",
