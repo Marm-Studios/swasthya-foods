@@ -9,9 +9,10 @@
     "build:vite": "vite build",
     "dev:shopify": "shopify theme dev --store 1s00vn-py.myshopify.com",
     "dev": "concurrently -r -k -P 'shopify theme dev {@}' 'vite'",
-    "merge": "node scripts/merge-dist-to-assets.js",
     "cleanup": "node scripts/cleanup-assets.cjs",
+    "merge": "node scripts/merge-dist-to-assets.js",
     "build": "pnpm run build:vite && pnpm cleanup && pnpm merge",
+    "push": "shopify theme push",
     "deploy": "pnpm run build && shopify theme push"
   },
   "devDependencies": {
