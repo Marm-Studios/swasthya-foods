@@ -20,7 +20,7 @@
 
 @layer base {
   html {
-    @apply !text-xs;
+    @apply !scroll-smooth !text-xs;
   }
 
   .body-custom {

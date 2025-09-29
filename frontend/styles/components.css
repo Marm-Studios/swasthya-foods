@@ -53,6 +53,12 @@
 
   /* #endregion */
 
+  /* #region HEADER-SEARCH */
+  .header-search-custom-modal {
+    @apply !bg-navbar;
+  }
+  /* #endregion */
+
   /* #region MOBILE-MENU-DRAWER */
   .custom-menu-drawer {
     @apply !bg-header;
@@ -95,7 +101,7 @@
   }
 
   .main-page-title {
-    @apply !mb-0;
+    @apply !mb-14;
   }
   /* #endregion */
 
