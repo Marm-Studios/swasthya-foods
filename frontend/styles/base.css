@@ -1,5 +1,5 @@
 :root {
-  --background-color: #edeced;
+  --background-color: #fefefe;
   --navbar-color: #dbd2c9;
   --header-color: #dbd2c9;
   --footer-color: #a97647;
@@ -23,7 +23,7 @@
     @apply !text-xs;
   }
 
-  body {
+  .body-custom {
     @apply !bg-background;
   }
 
