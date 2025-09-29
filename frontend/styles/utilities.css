@@ -2,4 +2,8 @@
   .icon-custom {
     @apply !h-10 !w-10;
   }
+
+  .icon {
+    @apply !h-12 !w-12;
+  }
 }
