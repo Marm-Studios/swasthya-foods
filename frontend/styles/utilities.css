@@ -1,0 +1,5 @@
+@layer utilities {
+  .icon-custom {
+    @apply !h-10 !w-10;
+  }
+}
