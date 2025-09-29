@@ -79,4 +79,29 @@
   /* #endregion */
 
   /* #endregion */
+
+  /* #region MAIN-PAGE */
+  .shopify-section,
+  .section {
+    @apply !bg-background;
+  }
+
+  .main-page-custom-wrapper {
+    @apply !bg-background;
+  }
+
+  .main-page-title-custom {
+    @apply !text-7xl;
+  }
+
+  .main-page-title {
+    @apply !mb-0;
+  }
+  /* #endregion */
+
+  /* #region CONTACT-FORM */
+  .contact-form-custom-wrapper {
+    @apply !bg-background;
+  }
+  /* #endregion */
 }
