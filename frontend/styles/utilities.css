@@ -1,4 +1,8 @@
 @layer utilities {
+  .icon-small {
+    @apply !h-6 !w-6;
+  }
+
   .icon-custom {
     @apply !h-10 !w-10;
   }
