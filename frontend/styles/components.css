@@ -13,7 +13,7 @@
   }
 
   .header-custom-logo-text {
-    @apply !text-2xl sm:!text-3xl md:!text-4xl uppercase;
+    @apply !text-2xl sm:!text-3xl md:!text-4xl !uppercase;
     font-family: var(--font-heading-family) !important;
   }
 
