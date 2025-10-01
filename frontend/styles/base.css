@@ -4,8 +4,17 @@
   --header-color: #dbd2c9;
   --footer-color: #a97647;
 
-  --body-text-color: #383736;
-  --heading-text-color: #599552;
+  /* #383736 */
+  /* #37a850 */
+
+  --foreground-color: #20201f;
+  --heading-pri-color: #35593c;
+  --heading-sec-color: #37a850;
+  --heading-pro-hovercolor: #20201f;
+
+  --menu-icon-size: 2.5rem;
+  --header-icon-size: 3rem;
+  --header-large-icon-size: 4rem;
 }
 
 @theme inline {
@@ -14,8 +23,14 @@
   --color-header: var(--header-color);
   --color-footer: var(--footer-color);
 
-  --color-body-text: var(--body-text-color);
-  --color-heading-text: var(--heading-text-color);
+  --color-foreground: var(--foreground-color);
+  --color-heading-pri: var(--heading-pri-color);
+  --color-heading-sec: var(--heading-sec-color);
+  --color-heading-pri-hover: var(--heading-pro-hovercolor);
+
+  --spacing-menu-icon-size: var(--menu-icon-size);
+  --spacing-header-icon-size: var(--header-icon-size);
+  --spacing-header-large-icon-size: var(--header-large-icon-size);
 }
 
 @layer base {
@@ -24,7 +39,16 @@
   }
 
   .body-custom {
-    @apply !bg-background;
+    @apply !bg-background !text-foreground;
+  }
+
+  /* OVERWRITTEN */
+  .link--text {
+    @apply !text-foreground;
+  }
+
+  .link--text:hover {
+    @apply !text-foreground;
   }
 
   /* .page-width {

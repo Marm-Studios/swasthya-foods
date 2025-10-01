@@ -1,13 +1,41 @@
 @layer utilities {
-  .icon-small {
-    @apply !h-6 !w-6;
+  .header-icon-custom {
+    @apply !h-header-icon-size !w-header-icon-size;
   }
 
-  .icon-custom {
-    @apply !h-10 !w-10;
+  .header-icon-custom:hover {
+    @apply !text-footer;
   }
+
+  .header-large-icon-custom {
+    @apply !h-header-large-icon-size !w-header-large-icon-size;
+  }
+
+  .header-large-icon-custom > .icon {
+    @apply !h-header-large-icon-size !w-header-large-icon-size;
+  }
+
+  .header-large-icon-custom:hover {
+    @apply !text-footer;
+  }
+
+  .menu-icon-custom {
+    @apply !h-menu-icon-size !w-menu-icon-size;
+  }
+
+  .menu-icon-custom:hover {
+    @apply !text-footer;
+  }
+
+  /* .icon-small {
+    @apply !h-6 !w-6;
+  } */
+
+  /* .icon-custom {
+    @apply !h-10 !w-10;
+  } */
 
   .icon {
-    @apply !h-12 !w-12;
+    @apply !h-full !w-full;
   }
 }
