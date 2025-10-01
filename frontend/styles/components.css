@@ -9,12 +9,16 @@
   } */
 
   .header-custom-logo {
-    @apply !flex !flex-col !justify-center !items-center !p-0 gap-3 !text-heading-pri hover:!text-heading-pri-hover;
+    @apply !flex !flex-col !justify-center !items-center !p-0 gap-3;
   }
 
   .header-custom-logo-text {
-    @apply !text-2xl sm:!text-3xl md:!text-4xl !uppercase;
+    @apply !text-2xl sm:!text-3xl md:!text-4xl !uppercase !text-heading-pri;
     font-family: var(--font-heading-family) !important;
+  }
+
+  .header-custom-logo:hover .header-custom-logo-text {
+    @apply !text-heading-pri-hover;
   }
 
   /* #region OVERWRITTEN */
