@@ -7,7 +7,7 @@
   /* #383736 */
   /* #37a850 */
 
-  --foreground-color: #20201f;
+  --foreground-pri-color: #20201f;
   --heading-pri-color: #35593c;
   --heading-sec-color: #37a850;
   --heading-pro-hovercolor: #20201f;
@@ -15,6 +15,7 @@
   --menu-icon-size: 2.5rem;
   --header-icon-size: 3rem;
   --header-large-icon-size: 4rem;
+  --footer-icon-size: 2.5rem;
 }
 
 @theme inline {
@@ -23,7 +24,7 @@
   --color-header: var(--header-color);
   --color-footer: var(--footer-color);
 
-  --color-foreground: var(--foreground-color);
+  --color-foreground-pri: var(--foreground-pri-color);
   --color-heading-pri: var(--heading-pri-color);
   --color-heading-sec: var(--heading-sec-color);
   --color-heading-pri-hover: var(--heading-pro-hovercolor);
@@ -31,6 +32,7 @@
   --spacing-menu-icon-size: var(--menu-icon-size);
   --spacing-header-icon-size: var(--header-icon-size);
   --spacing-header-large-icon-size: var(--header-large-icon-size);
+  --spacing-footer-icon-size: var(--footer-icon-size);
 }
 
 @layer base {
@@ -39,16 +41,16 @@
   }
 
   .body-custom {
-    @apply !bg-background !text-foreground;
+    @apply !bg-background !text-foreground-pri;
   }
 
   /* OVERWRITTEN */
   .link--text {
-    @apply !text-foreground;
+    @apply !text-foreground-pri;
   }
 
   .link--text:hover {
-    @apply !text-foreground;
+    @apply !text-foreground-pri;
   }
 
   /* .page-width {

@@ -11,32 +11,79 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    //     "brandinfo": {
+    //       "type": "brand_information",
+    //       "settings": {}
+    //     },
+    //     "links": {
+    //       "type": "links",
+    //       "blocks": {
+    //         "quicklinks": {
+    //           "type": "link_list",
+    //           "settings": {
+    //             "heading": "Quick links",
+    //             "menu": "footer"
+    //           }
+    //         },
+    //         "policies": {
+    //           "type": "link_list",
+    //           "settings": {
+    //             "heading": "Policies",
+    //             "menu": "footer"
+    //           }
+    //         }
+    //       },
+    //       "block_order": ["quicklinks", "policies"],
+    //       "settings": {
+    //         "address": "",
+    //         "email": "",
+    //         "phone": ""
+    //       }
+    //     },
+    //     "contact": {
+    //       "type": "contact",
+    //       "settings": {}
+    //     },
+    //     "copyright": {
+    //       "type": "text",
+    //       "settings": {
+
+    //       }
+    //     }
+    //   },
+    //   "order": ["brandinfo", "links", "contact", "copyright"]
+    // }
+
     "footer-custom": {
       "type": "footer-custom",
       "blocks": {
-        "footer-0": {
+        "brandinfo": {
+          "type": "brand_information",
+          "settings": {}
+        },
+        "quicklinks": {
           "type": "link_list",
           "settings": {
             "heading": "Quick links",
             "menu": "footer"
           }
         },
-        "footer-1": {
+        "contact": {
           "type": "link_list",
           "settings": {
-            "heading": "Info",
+            "heading": "Contact",
             "menu": "footer"
           }
         },
-        "footer-2": {
-          "type": "text",
+        "policies": {
+          "type": "link_list",
           "settings": {
-            "heading": "Our mission",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.</p>"
+            "heading": "Policies",
+            "menu": "footer"
           }
         }
       },
-      "block_order": ["footer-0", "footer-1"],
+      "block_order": ["brandinfo", "quicklinks", "policies", "contact"],
       "settings": {
         "color_scheme": "scheme-1",
         "newsletter_enable": false,

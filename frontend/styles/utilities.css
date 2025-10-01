@@ -1,4 +1,9 @@
 @layer utilities {
+  /* #regin ICONS */
+  .icon {
+    @apply !h-full !w-full;
+  }
+
   .header-icon-custom {
     @apply !h-header-icon-size !w-header-icon-size;
   }
@@ -35,7 +40,12 @@
     @apply !h-10 !w-10;
   } */
 
-  .icon {
-    @apply !h-full !w-full;
+  .footer-icon-custom {
+    @apply !h-footer-icon-size !w-footer-icon-size;
   }
+
+  .footer-icon-custom:hover {
+    @apply !text-footer;
+  }
+  /* #endregion */
 }
