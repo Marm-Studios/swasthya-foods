@@ -11,56 +11,9 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
-    //     "brandinfo": {
-    //       "type": "brand_information",
-    //       "settings": {}
-    //     },
-    //     "links": {
-    //       "type": "links",
-    //       "blocks": {
-    //         "quicklinks": {
-    //           "type": "link_list",
-    //           "settings": {
-    //             "heading": "Quick links",
-    //             "menu": "footer"
-    //           }
-    //         },
-    //         "policies": {
-    //           "type": "link_list",
-    //           "settings": {
-    //             "heading": "Policies",
-    //             "menu": "footer"
-    //           }
-    //         }
-    //       },
-    //       "block_order": ["quicklinks", "policies"],
-    //       "settings": {
-    //         "address": "",
-    //         "email": "",
-    //         "phone": ""
-    //       }
-    //     },
-    //     "contact": {
-    //       "type": "contact",
-    //       "settings": {}
-    //     },
-    //     "copyright": {
-    //       "type": "text",
-    //       "settings": {
-
-    //       }
-    //     }
-    //   },
-    //   "order": ["brandinfo", "links", "contact", "copyright"]
-    // }
-
     "footer-custom": {
       "type": "footer-custom",
       "blocks": {
-        // "brandinfo": {
-        //   "type": "brand_information",
-        //   "settings": {}
-        // },
         "quicklinks": {
           "type": "link_list",
           "settings": {
@@ -72,23 +25,19 @@
           "type": "link_list",
           "settings": {
             "heading": "Policies",
-            "menu": "footer-policies"
+            "menu": "footer-policylinks"
           }
         }
-        // "contact": {
-        //   "type": "link_list",
-        //   "settings": {
-        //     "heading": "Contact",
-        //     "menu": "footer"
-        //   }
-        // }
       },
-      // "block_order": ["brandinfo", "quicklinks", "policies", "contact"],
-      "block_order": ["quicklinks", "policies"],
+      "block_order": [
+        "quicklinks",
+        "policies"
+      ],
       "settings": {
         "color_scheme": "scheme-1",
         "newsletter_enable": false,
         "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": false,
         "enable_language_selector": false,
@@ -100,59 +49,7 @@
       }
     }
   },
-  "order": ["footer-custom"]
+  "order": [
+    "footer-custom"
+  ]
 }
-
-// {
-//   "name": "t:sections.footer.name",
-//   "type": "footer",
-//   "sections": {
-//     "footer": {
-//       "type": "footer",
-//       "blocks": {
-//         "footer-0": {
-//           "type": "link_list",
-//           "settings": {
-//             "heading": "Quick links",
-//             "menu": "footer"
-//           }
-//         },
-//         "footer-1": {
-//           "type": "link_list",
-//           "settings": {
-//             "heading": "Info",
-//             "menu": "footer"
-//           }
-//         },
-//         "footer-2": {
-//           "type": "text",
-//           "settings": {
-//             "heading": "Our mission",
-//             "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
-//           }
-//         }
-//       },
-//       "block_order": [
-//         "footer-0",
-//         "footer-1",
-//         "footer-2"
-//       ],
-//       "settings": {
-//         "color_scheme": "scheme-1",
-//         "newsletter_enable": true,
-//         "newsletter_heading": "Subscribe to our emails",
-//         "show_social": true,
-//         "enable_country_selector": false,
-//         "enable_language_selector": false,
-//         "payment_enable": true,
-//         "show_policy": false,
-//         "margin_top": 48,
-//         "padding_top": 36,
-//         "padding_bottom": 36
-//       }
-//     }
-//   },
-//   "order": [
-//     "footer"
-//   ]
-// }
