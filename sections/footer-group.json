@@ -68,17 +68,17 @@
             "menu": "footer"
           }
         },
-        "contact": {
-          "type": "link_list",
-          "settings": {
-            "heading": "Contact",
-            "menu": "footer"
-          }
-        },
         "policies": {
           "type": "link_list",
           "settings": {
             "heading": "Policies",
+            "menu": "footer"
+          }
+        },
+        "contact": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Contact",
             "menu": "footer"
           }
         }
