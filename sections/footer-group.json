@@ -57,10 +57,10 @@
     "footer-custom": {
       "type": "footer-custom",
       "blocks": {
-        "brandinfo": {
-          "type": "brand_information",
-          "settings": {}
-        },
+        // "brandinfo": {
+        //   "type": "brand_information",
+        //   "settings": {}
+        // },
         "quicklinks": {
           "type": "link_list",
           "settings": {
@@ -74,16 +74,17 @@
             "heading": "Policies",
             "menu": "footer"
           }
-        },
-        "contact": {
-          "type": "link_list",
-          "settings": {
-            "heading": "Contact",
-            "menu": "footer"
-          }
         }
+        // "contact": {
+        //   "type": "link_list",
+        //   "settings": {
+        //     "heading": "Contact",
+        //     "menu": "footer"
+        //   }
+        // }
       },
-      "block_order": ["brandinfo", "quicklinks", "policies", "contact"],
+      // "block_order": ["brandinfo", "quicklinks", "policies", "contact"],
+      "block_order": ["quicklinks", "policies"],
       "settings": {
         "color_scheme": "scheme-1",
         "newsletter_enable": false,

@@ -40,6 +40,10 @@
     @apply !h-10 !w-10;
   } */
 
+  .contact-icon-custom {
+    @apply !h-footer-icon-size !w-footer-icon-size shrink-0;
+  }
+
   .footer-icon-custom {
     @apply !h-footer-icon-size !w-footer-icon-size;
   }
