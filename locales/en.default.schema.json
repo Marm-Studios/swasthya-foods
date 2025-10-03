@@ -284,6 +284,26 @@
         }
       }
     },
+    "contact_information": {
+      "name": "Contact information",
+      "settings": {
+        "paragraph": {
+          "content": "Provide contact details used across the theme (address, phone and email)."
+        },
+        "contact_address_text": {
+          "label": "Address"
+        },
+        "contact_address_link": {
+          "label": "Address link (maps URL)"
+        },
+        "contact_phone": {
+          "label": "Phone"
+        },
+        "contact_email": {
+          "label": "Email"
+        }
+      }
+    },
     "search_input": {
       "name": "Search behavior",
       "settings": {
@@ -3395,26 +3415,6 @@
       },
       "presets": {
         "name": "Collapsible content"
-      }
-    },
-    "contact_information": {
-      "name": "Contact information",
-      "settings": {
-        "paragraph": {
-          "content": "Provide contact details used across the theme (address, phone and email)."
-        },
-        "contact_address_text": {
-          "label": "Address"
-        },
-        "contact_address_link": {
-          "label": "Address link (maps URL)"
-        },
-        "contact_phone": {
-          "label": "Phone"
-        },
-        "contact_email": {
-          "label": "Email"
-        }
       }
     }
   }
