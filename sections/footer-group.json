@@ -65,14 +65,14 @@
           "type": "link_list",
           "settings": {
             "heading": "Quick links",
-            "menu": "footer"
+            "menu": "footer-quicklinks"
           }
         },
         "policies": {
           "type": "link_list",
           "settings": {
             "heading": "Policies",
-            "menu": "footer"
+            "menu": "footer-policies"
           }
         }
         // "contact": {
