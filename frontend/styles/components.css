@@ -121,7 +121,7 @@
   }
 
   .footer-multiblock-custom {
-    @apply !flex !flex-row !justify-center !items-center gap-20 md:gap-30 lg:gap-40;
+    @apply !flex !flex-row !justify-center !items-start gap-20 md:gap-30 lg:gap-40;
   }
 
   .footer-block-brand-custom {
