@@ -182,11 +182,11 @@
     @apply !mb-0;
   }
 
-  .list-wrapper-brandsocial-custom {
+  .list-wrapper-media-custom {
     @apply !flex;
   }
 
-  .list-item-brandsocial-custom {
+  .list-item-media-custom {
     @apply !list-item;
   }
 
