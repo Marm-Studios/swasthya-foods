@@ -182,6 +182,14 @@
     @apply !mb-0;
   }
 
+  .list-wrapper-brandsocial-custom {
+    @apply !flex;
+  }
+
+  .list-item-brandsocial-custom {
+    @apply !list-item;
+  }
+
   /* #region OVERWRITTEN */
   .copyright__content {
     @apply !text-lg;
