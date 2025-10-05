@@ -45,7 +45,7 @@
   }
 
   .footer-icon-custom {
-    @apply !h-footer-icon-size !w-footer-icon-size;
+    @apply !text-foreground-pri !h-footer-icon-size !w-footer-icon-size;
   }
 
   .footer-icon-custom:hover {

@@ -1,4 +1,10 @@
 @layer components {
+  /* #region UTILITY-BAR */
+  .utility-bar-custom {
+    @apply !bg-footer;
+  }
+  /* #endregion */
+
   /* #region HEADER */
   .header-custom-wrapper {
     @apply !bg-header;
@@ -138,11 +144,11 @@
   }
 
   .footer-block-link-custom {
-    @apply !flex !flex-col !justify-center !items-start !gap-2 !basis-1 md:!basis-auto;
+    @apply !flex !flex-col !justify-center !items-start !gap-2 !basis-1 md:!basis-auto !text-foreground-pri;
   }
 
   .footer-block-contact-custom {
-    @apply !text-[1.35rem] !flex !flex-col !justify-center !items-start gap-5;
+    @apply !text-[1.35rem] !flex !flex-col !justify-center !items-start gap-5 !text-foreground-pri;
   }
 
   .footer-block-brand-custom .list-social__link {
