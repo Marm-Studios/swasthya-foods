@@ -134,7 +134,7 @@
   }
 
   .footer-block-brand-custom {
-    @apply !flex !flex-col !justify-center !items-center gap-2;
+    @apply !flex !flex-col !justify-center !items-center gap-2 !text-center;
   }
 
   .footer-block-link-custom {
