@@ -13,7 +13,7 @@
   }
 
   .header-custom-logo-text {
-    @apply !text-2xl sm:!text-3xl md:!text-4xl !uppercase !text-heading-pri;
+    @apply !text-xl sm:!text-2xl md:!text-3xl !uppercase !text-heading-pri;
     font-family: var(--font-heading-family) !important;
   }
 
@@ -50,8 +50,12 @@
     @apply !ml-0;
   }
 
-  .header__icons {
+  /* .header__icons {
     @apply !pr-0 gap-2 sm:gap-3 md:gap-5;
+  } */
+
+  .header-icons-custom {
+    @apply !flex !flex-row !pr-3 !gap-2 sm:!gap-3 md:!gap-5;
   }
 
   .header__icon {
@@ -112,8 +116,12 @@
     @apply !bg-navbar !m-0 !pt-20 !pb-0;
   }
 
+  .footer-top-custom {
+    @apply !pb-20;
+  }
+
   .footer-wrapper-custom {
-    @apply !grid !grid-cols-1 md:!grid-cols-[1fr_2fr_1fr] !items-center !gap-20 md:!gap-0;
+    @apply !grid !grid-cols-1 md:!grid-cols-[1fr_3fr_1.5fr] !items-center !gap-20 md:!gap-10;
   }
 
   .footer-block-custom {
@@ -122,6 +130,7 @@
 
   .footer-multiblock-custom {
     @apply !flex !flex-row !justify-center !items-start gap-20 md:gap-30 lg:gap-40;
+    /* @apply !grid !grid-cols-2 !justify-center !items-start gap-12 md:gap-30 lg:gap-40 !grow-0; */
   }
 
   .footer-block-brand-custom {
@@ -129,7 +138,7 @@
   }
 
   .footer-block-link-custom {
-    @apply !flex !flex-col !justify-center !items-start !gap-2;
+    @apply !flex !flex-col !justify-center !items-start !gap-2 !basis-1 md:!basis-auto;
   }
 
   .footer-block-contact-custom {
