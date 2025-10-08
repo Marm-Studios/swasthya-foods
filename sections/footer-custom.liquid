@@ -77,7 +77,7 @@
                 | divided_by: settings.brand_image.aspect_ratio
               -%}
               <div
-                class="footer-block__image-wrapper"
+                class="footer-brand-custom-img-wrapper footer-block__image-wrapper"
                 style="max-width: min(100%, {{ settings.brand_image_width }}px);"
               >
                 {{
@@ -89,10 +89,11 @@
                     height: brand_image_height,
                     width: settings.brand_image_width
                 }}
+                {% comment %} class: 'footer-brand-custom-img' {% endcomment %}
               </div>
             {%- endif -%}
             {%- if settings.brand_headline != blank -%}
-              <h2 class="footer-brand-heading footer-block__heading rte">{{ settings.brand_headline }}</h2>
+              <h2 class="footer-brand-custom-heading footer-block__heading rte">{{ settings.brand_headline }}</h2>
             {%- endif -%}
             {%- if settings.brand_description != blank -%}
               <div class="rte">{{ settings.brand_description }}</div>
@@ -135,7 +136,9 @@
                 {% endif %}
               >
                 {%- if block.settings.heading != blank -%}
-                  <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
+                  <h2 class="footer-block-link-custom-heading footer-block__heading inline-richtext">
+                    {{- block.settings.heading -}}
+                  </h2>
                 {%- endif -%}
 
                 {%- case block.type -%}

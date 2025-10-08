@@ -19,6 +19,7 @@
     {% comment %} {{ page.title | escape }} {% endcomment %}
     {{ section.settings.title }}
   </h1>
+  <hr class="line-separator">
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
     {{ page.content }}
   </div>
