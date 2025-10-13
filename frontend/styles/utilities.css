@@ -55,11 +55,15 @@
 
   /* #region BUTTONS */
   .btn-reg {
-    @apply !p-0 !py-3 !px-8 !border-none !bg-heading-pri !text-background !text-xl !min-h-2 !min-w-2 !tracking-normal;
+    @apply !p-0 !min-h-2 !min-w-2 !tracking-wider;
     font-family: var(--font-body-family) !important;
   }
 
-  .btn-reg:hover {
+  .btn-pri {
+    @apply !bg-heading-pri !text-background !py-3 !px-8 !text-xl !border-none;
+  }
+
+  .btn-pri:hover {
     @apply !bg-foreground-pri;
   }
 
