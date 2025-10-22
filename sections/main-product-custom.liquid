@@ -99,20 +99,25 @@
                   </p>
                 {% endcomment %}
               {%- when 'title' -%}
-                <div class="product__title" {{ block.shopify_attributes }}>
-                  <h1>{{ product.title | escape }}</h1>
+                {% comment %} <div class="product__title" {{ block.shopify_attributes }}> {% endcomment %}
+                <div>
+                  <h1 class="ind-product-title-custom product__title">{{ product.title | escape }}</h1>
+                  <hr class="line-separator">
+                </div>
+                {% comment %}
                   <a href="{{ product.url }}" class="product__title">
                     <h2 class="h1">
                       {{ product.title | escape }}
                     </h2>
                   </a>
-                </div>
+                {% endcomment %}
+                {% comment %} </div> {% endcomment %}
               {%- when 'price' -%}
                 <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
-                  {%- render 'price',
+                  {%- render 'price-custom',
                     product: product,
                     use_variant: true,
-                    show_badges: true,
+                    show_badges: false,
                     price_class: 'price--large'
                   -%}
                 </div>
