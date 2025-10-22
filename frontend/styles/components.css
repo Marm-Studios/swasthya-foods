@@ -459,8 +459,7 @@
   }
 
   .price-item-sale-custom {
-    @apply !text-xl !text-foreground-pri !tracking-wider !font-semibold;
-    /* font-weight: var(--font-body-weight-medium) !important; */
+    @apply !text-xl !text-foreground-pri !tracking-wider !font-medium;
   }
 
   /* .price-item-regular-custom {
